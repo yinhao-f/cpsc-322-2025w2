@@ -1,0 +1,10 @@
+According to Hoeffding's inequality, 
+$$ P(|x-p|>\epsilon) \leq 2e^{-2n\epsilon ^2} $$
+Given $\delta = 0.05$, 
+$$ 2e^{-2n\epsilon^2} < 0.05 $$
+$$ e^{-2n\epsilon^2} < 0.025 $$
+$$ -2n\epsilon^2 < \ln(0.025) $$
+$$ \epsilon^2 > \frac {-\ln(0.025)} {2n} $$
+$$ \epsilon > \sqrt \frac {-\ln(0.025)} {2n} $$
+
+Since we want $\epsilon$ to be as tight as possible, we will choose $\epsilon$ to be exactly $\sqrt \frac {-\ln(0.025)} {2n}$. 

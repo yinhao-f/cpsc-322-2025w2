@@ -1,3 +1,5 @@
+# Rejection Sampling
+
 import matplotlib.pyplot as plt
 import math
 
