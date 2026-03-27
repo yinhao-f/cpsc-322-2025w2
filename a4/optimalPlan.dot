@@ -1,0 +1,29 @@
+digraph {
+    // node [shape=plaintext, fontname="Times-Roman", fontsize=12];
+    // edge [fontname="Times-Roman", fontsize=10];
+    node [shape=plaintext, fontname="Times-Roman", fontsize=8]; // modified so the preview can display the whole graph. It doesn't support horizontal scrolling
+    edge [fontname="Times-Roman", fontsize=10];
+    
+    s0 [label="(<P=8, W=T, C1=T, C4=T, M3=T, M9=T>)"];
+    
+    s1 [label="(<P=7, W=T, C1=T, C4=T, M3=T, M9=T>)"];
+    s0 -> s1 [label="moveLeft"];
+
+    s2 [label="(<P=8, W=F, C1=T, C4=T, M3=T, M9=F>)"];
+    s0 -> s2 [label="fire"];
+    
+    s3 [label="(<P=7, W=F, C1=T, C4=T, M3=T, M9=F>)"];
+    s2 -> s3 [label="moveLeft"];
+    
+    s4 [label="(<P=9, W=F, C1=T, C4=T, M3=T, M9=F>)"];
+    s2 -> s4 [label="moveRight"];
+    
+    s5 [label="(<P=8, W=F, C1=T, C4=T, M3=T, M9=F>)"];
+    s4 -> s5 [label="moveLeft"];
+    
+    s6 [label="GOAL (<P=10, W=F, C1=T, C4=T, M3=T, M9=F>)"];
+    s4 -> s6 [label="moveRight"];
+    
+    s7 [label="(<P=9, W=F, C1=T, C4=T, M3=T, M9=F>)"];
+    s6 -> s7 [label="moveLeft"];
+}

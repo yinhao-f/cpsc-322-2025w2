@@ -1,0 +1,23 @@
+digraph {
+    A, B, C, D, E, F, G, H, J, K, L, O, P, Q, S, E, U [label=""]
+    A -> B [label="o, x"]
+    A -> C [label="e, x"]
+    A -> D [label="B, x"]
+    A -> E [label="L, x"]
+    
+    B -> F [label="d, p"]
+    B -> G [label="A, p"]
+    B -> H [label="K, p"]
+    
+    C -> J [label="h, j"]
+    C -> K [label="l, j"]
+    C -> L [label="G, j"]
+    
+    D -> O [label="f, A"]
+    D -> P [label="p, A"]
+    D -> Q [label="M, A"]
+    
+    E -> S [label="j, G"]
+    E -> E [label="E, G"]
+    E -> U [label="I, G"]
+}
